@@ -14,7 +14,7 @@ export default function Form() {
         <div className="register">
             <div className="col-1">
                 <h2>Sign In</h2>
-                <span>register and enjoy the service</span>
+                <span>login with your credentials</span>
 
                 <form id='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                     <input type="text" {...register("username")} placeholder='username' />
