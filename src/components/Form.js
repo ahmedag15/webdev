@@ -1,6 +1,6 @@
 import React from 'react'
 import bgImg from '../assets/mainIMG.jpg';
-import agImg from '../assets/signinIMG3.png';
+import agImg from '../assets/signinIMG.png';
 import { useForm } from 'react-hook-form';
 
 export default function Form() {
@@ -13,7 +13,7 @@ export default function Form() {
             <div className="register">
                 <div className="col-1">
                     <div className='img'>
-                    <img style={{ width: 350, height: 125 }} src={agImg} alt="" />
+                        <img style={{ width: 350, height: 125 }} src={agImg} alt="" />
                     </div>
                     <span>login with your credentials</span>
 
@@ -31,3 +31,4 @@ export default function Form() {
         </section>
     )
 }
+    
