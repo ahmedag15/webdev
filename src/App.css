@@ -7,8 +7,8 @@
 
 body{
   background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #06374f, #073562a5, #03242696);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5a748c, #1a2a41, #021325); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #12064f, #2c1376a5, #0a193b96);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5a5d8c, #1a1c41, #020425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }
 
@@ -21,17 +21,22 @@ body{
 }
 
 .register{
-  max-width: 978px;
+  max-width: 1200px;
+  max-height: 1200px;
+  height: 60vh;
   width: 100vw;
   display:flex;
-  border: 1px solid #e9ecef;
-  border-radius: 5px;
+  border: 0px solid #e9ecef;
+  border-radius: 20px;
   /* box-shadow: 1px 3px 10px #e9ecef; */
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
+
 .register span{
-  color: #adb5bd;
+  color: #404362;
+  font-size: large;
+  
 }
 
 #form{
@@ -41,8 +46,10 @@ body{
 }
 
 #form >  input, .btn{
-  border: 1px solid #e9ecef;
+  border: 1px solid #b7bec5; 
   padding: .9em 1em;
+  border-radius: 20px;
+  
 }
 
 #form > input:focus{
@@ -50,10 +57,12 @@ body{
 }
 
 #form > .btn{
-  background-color: #003049;
+  background-color: #1b2157;
   color: #e9ecef;
   font-size: 1em;
   cursor: pointer;
+  box-shadow: 5px 5px 10px #1a2958;
+  border-radius: 20px;
 }
 
 .flex{
@@ -71,12 +80,12 @@ body{
 }
 
 .register .col-2 img{
-  width: 480px;
+  width: 650px;
   height: 100%;
   object-fit: cover;
   align-self: flex-end;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   display: none;
 }
 
