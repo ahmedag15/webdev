@@ -9,16 +9,63 @@ body{
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #12064f, #2c1376a5, #0a193b96);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #5a5d8c, #1a1c41, #020425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
 .App {
   height: 100vh;
+  width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   text-align: center;
 }
+
+
+.Sidebar{
+  height: 100%;
+  width: 400px;
+  background-color:#e9ecef ;
+  position: absolute;
+  left: 0px;
+  
+
+}
+.SidebarList{
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+
+.SidebarList .row{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: #12064f;
+    justify-content: center;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.row #icon{
+  
+  display: grid;
+  place-items: center;
+}
+.row #title{
+   
+}
+
+
+
+
 
 .register{
   max-width: 1200px;
@@ -88,6 +135,7 @@ body{
   border-bottom-right-radius: 20px;
   display: none;
 }
+
 
 @media screen and (min-width: 860px)  {
   .register .col-2 img{
