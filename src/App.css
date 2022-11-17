@@ -40,9 +40,9 @@ body{
 }
 
 .SidebarList .row{
-    width: 100%;
-    height: 50px;
-    border: 1px solid black;
+    width: 90%;
+    height: 80px;
+    
     list-style-type: none;
     margin: 0;
     display: flex;
@@ -54,18 +54,28 @@ body{
 
 }
 
+.SidebarList .row:hover{
+  cursor: pointer;
+  background-color:#404362;
+}
+.Sidebar #active{
+  background-color: #404362;
+}
+
 .row #icon{
-  
+  position: absolute;
+  left: 15px;
   display: grid;
   place-items: center;
+  size: 10px;
 }
 .row #title{
+  position: absolute;
+  left: 80px;
+  font-size: larger;
+  
    
 }
-
-
-
-
 
 .register{
   max-width: 1200px;
