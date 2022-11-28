@@ -1,23 +1,28 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from './components/Login';
 import Sidebar from './components/Sidebar';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Dashboard from './components/Dashboard';
 
 
-
 function App() {
+
+  var isLoggedin = false;
+
   return (
     <div className='App'>
-   
-       <Router>
+
+      {isLoggedin ? <Sidebar /> : <></>}
+
+      <Router>
         <Routes>
-         <Route exact path="/" element={<Login />} />
-         <Route path="/sidebar" element={<Sidebar />} />
-         <Route path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/" element={<Login />} />
+          {/* <Route path="/sidebar" element={ } /> */}
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
-       </Router> 
+      </Router>
+
     </div>
   )
 }
