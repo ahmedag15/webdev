@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-* > * {
-    font-family: "Poppins", cursive;
-    margin: 0;
+*>* {
+  font-family: "Poppins", cursive;
+  margin: 0;
 }
 
-body{
-  background: #0f0c29;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #12064f, #2c1376a5, #0a193b96);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #5a5d8c, #1a1c41, #020425); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+body {
+  background: #0f0c29;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #12064f, #2c1376a5, #0a193b96);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #5a5d8c, #1a1c41, #020425);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: 0;
   padding: 0;
   overflow: auto;
@@ -18,71 +21,17 @@ body{
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-
-.Sidebar{
-  height: 100%;
-  width: 400px;
-  background-color:#e9ecef ;
-  position: absolute;
-  left: 0px;
-  
-
-}
-.SidebarList{
-  height: auto;
-  width: 100%;
-  padding: 0;
-}
-
-.SidebarList .row{
-    width: 90%;
-    height: 80px;
-    
-    list-style-type: none;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    color: #12064f;
-    justify-content: center;
-    align-items: center;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.SidebarList .row:hover{
-  cursor: pointer;
-  background-color:#404362;
-}
-.Sidebar #active{
-  background-color: #404362;
-}
-
-.row #icon{
-  position: absolute;
-  left: 15px;
-  display: grid;
-  place-items: center;
-  size: 10px;
-}
-.row #title{
-  position: absolute;
-  left: 80px;
-  font-size: larger;
-  
-   
-}
-
-.register{
+.section {
   max-width: 1200px;
   max-height: 1200px;
   height: 60vh;
   width: 100vw;
-  display:flex;
+  display: flex;
   border: 0px solid #e9ecef;
   border-radius: 20px;
   /* box-shadow: 1px 3px 10px #e9ecef; */
@@ -90,30 +39,31 @@ body{
 }
 
 
-.register span{
+.section span {
   color: #404362;
   font-size: large;
-  
+
 }
 
-#form{
+#form {
   max-width: 320px;
   width: 100vw;
   margin: 2em auto;
 }
 
-#form >  input, .btn{
-  border: 1px solid #908ca7; 
+#form>input,
+.btn {
+  border: 1px solid #908ca7;
   padding: .9em 1em;
   border-radius: 20px;
-  
+
 }
 
-#form > input:focus{
+#form>input:focus {
   outline: none;
 }
 
-#form > .btn{
+#form>.btn {
   background-color: #1b2157;
   color: #e9ecef;
   font-size: 1em;
@@ -122,21 +72,21 @@ body{
   border-radius: 20px;
 }
 
-.flex{
+.flex {
   display: flex;
   gap: 1em;
 }
 
-.flex-col{
+.flex-col {
   flex-direction: column;
 }
 
-.register .col-1{
+.section .col-1 {
   margin: auto;
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
-.register .col-2 img{
+.section .col-2 img {
   width: 650px;
   height: 100%;
   object-fit: cover;
@@ -147,8 +97,66 @@ body{
 }
 
 
-@media screen and (min-width: 860px)  {
-  .register .col-2 img{
+@media screen and (min-width: 860px) {
+  .section .col-2 img {
     display: initial;
   }
+
+  .Sidebar {
+    height: 100%;
+    width: 400px;
+    background-color: #e9ecef;
+    position: absolute;
+    left: 0px;
+
+
+  }
+
+  .SidebarList {
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .SidebarList .row {
+    width: 90%;
+    height: 80px;
+
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: #12064f;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  }
+
+  .SidebarList .row:hover {
+    cursor: pointer;
+    background-color: #404362;
+  }
+
+  .SidebarList #active {
+    background-color: #4a53a8;
+  }
+
+  .row #icon {
+    position: absolute;
+    left: 15px;
+    display: grid;
+    place-items: center;
+    size: 10px;
+  }
+
+  .row #title {
+    position: absolute;
+    left: 80px;
+    font-size: larger;
+
+
+  }
+
+
 }

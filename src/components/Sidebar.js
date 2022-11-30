@@ -1,20 +1,20 @@
 import React from 'react'
 import { SidebarData } from './SidebarData';
-import { Dashboard } from './Dashboard';
 
 
 export default function Sidebar() {
 
-  return (
+ return (
     <div className="Sidebar">
       <ul className='SidebarList'>
         {SidebarData.map((val, key) => (
 
           <li
+
             className='row'
-            id={window.location.pathname === val.link ? "active" : ""}
+            id={window.location.href === val.link ? "active" : ""}
             key={key} onClick={() => {
-              window.location.pathname = val.link
+              window.location.href = val.link
 
             }}>
 
@@ -25,6 +25,7 @@ export default function Sidebar() {
 
 
         )
+        
         )
         }
       </ul>
