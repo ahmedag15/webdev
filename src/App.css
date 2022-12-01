@@ -214,6 +214,13 @@ body {
   border-radius: 20px;
 
 }
+#password,
+.btn {
+  border: 1px solid #908ca7;
+  padding: .9em 1em;
+  border-radius: 20px;
+
+}
 
 #Registeration-form>input:focus {
   outline: none;
