@@ -16,10 +16,10 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/departments" element={<Departments />} />
-          <Route path="/assets" element={<Assets />} />
-          <Route path="/employeerecords" element={<EmployeeRecords />} />
+          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/departments" element={<Departments />} />
+          <Route exact path="/assets" element={<Assets />} />
+          <Route exact path="/employeerecords" element={<EmployeeRecords />} />
         
 
         </Routes>

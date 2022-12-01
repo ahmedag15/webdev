@@ -1,14 +1,14 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 
-
-export default function Dashboard() {
+export default function Assets() {
     return (
         <>
             <Sidebar></Sidebar>,
             <div>
-               Dashboard
+                assets
             </div>
+
         </>
 
 

@@ -7,34 +7,34 @@ import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 
 
 export const SidebarData = [
-   {
-    title: "Dashboard",
-    icon:  <DashboardIcon/>,
-    link:  "/dashboard"
-   },
+    {
+        title: "Dashboard",
+        icon: <DashboardIcon />,
+        link: "dashboard"
+    },
 
-   {
-    title: "Departments",
-    icon:  <AccountTreeIcon/>,
-    link:  "/departments"
-   },
+    {
+        title: "Departments",
+        icon: <AccountTreeIcon />,
+        link: "departments"
+    },
 
-   {
-    title: "Assets",
-    icon:  <BusinessIcon/>,
-    link:  "/assets"
-   },
+    {
+        title: "Assets",
+        icon: <BusinessIcon />,
+        link: "assets"
+    },
 
-   {
-    title: "Employee Records",
-    icon:  <PeopleIcon/>,
-    link:  "/employeerecords"
-   },
+    {
+        title: "Employee Records",
+        icon: <PeopleIcon />,
+        link: "employeerecords"
+    },
 
-   {
-    title: "Logout",
-    icon:  <PowerSettingsNewIcon/>,
-    link:  "/logout"
-   }
+    {
+        title: "Logout",
+        icon: <PowerSettingsNewIcon />,
+        link: "/"
+    }
 ]
-  
+

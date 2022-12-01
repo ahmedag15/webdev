@@ -4,7 +4,7 @@ import { SidebarData } from './SidebarData';
 
 export default function Sidebar() {
 
- return (
+  return (
     <div className="Sidebar">
       <ul className='SidebarList'>
         {SidebarData.map((val, key) => (
@@ -25,7 +25,7 @@ export default function Sidebar() {
 
 
         )
-        
+
         )
         }
       </ul>

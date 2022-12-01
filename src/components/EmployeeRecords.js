@@ -1,17 +1,13 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 
-
-export default function Dashboard() {
+export default function EmployeeRecords() {
     return (
         <>
             <Sidebar></Sidebar>,
             <div>
-               Dashboard
+                employee records
             </div>
         </>
-
-
     )
 }
-

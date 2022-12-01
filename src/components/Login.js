@@ -1,7 +1,6 @@
 import React from 'react'
 import axios from 'axios';
 import { useForm } from 'react-hook-form'
-import { useNavigate } from "react-router-dom";
 import bgImg from '../assets/mainIMG.jpg';
 import agImg from '../assets/signinIMG.png';
 
@@ -11,14 +10,11 @@ export default function Login() {
     const { handleSubmit, formState: { errors } } = useForm()
     const onSubmit = data => console.log(data);
 
-    //  const navigate = useNavigate();
-
-    const navigateToSidebar = () => {
-        // navigate to /Sidebar
+    const navigateToDashboard = () => {
 
         var data = JSON.stringify({
-            "email": "tru@gmail.com",
-            "password": "12345678"
+            "Email": "tru@gmail.com",
+            "Password": "12345678"
         });
 
         var config = {
@@ -32,9 +28,8 @@ export default function Login() {
 
         axios(config)
             .then(function (response) {
-
                 // console.log(JSON.stringify(response.data));
-                window.location.assign('/sidebar');
+                window.location.href = '/dashboard'
             })
             .catch(function (error) {
                 console.log(error);
@@ -58,10 +53,10 @@ export default function Login() {
                         required
                     />
                     <input
-                        type="password"
+                        type="Password"
                         placeholder='Password'
                         required />
-                    <button className='btn' onClick={navigateToSidebar}>Login</button>
+                    <button className='btn' onClick={navigateToDashboard}>Login</button>
                 </form>
             </div>
 
