@@ -43,7 +43,7 @@ export default function RegistrationForm() {
             <div class="footer">
                 
                 <FormControl fullWidth>
-                        <InputLabel id="demo-simple-select-label" placeholder='Add User'>Access Rights</InputLabel>
+                        <InputLabel id="demo-simple-select-label" placeholder='Add User'>Designation</InputLabel>
                         <Select>
                          
                            

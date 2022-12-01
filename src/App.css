@@ -35,7 +35,7 @@ body {
   border: 0px solid #e9ecef;
   border-radius: 20px;
   /* box-shadow: 1px 3px 10px #e9ecef; */
-  background-color: rgb(26, 27, 88);
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -207,7 +207,7 @@ body {
   border-radius: 20px;
 
 }
-#password,
+#username,
 .btn {
   border: 1px solid #908ca7;
   padding: .9em 1em;
@@ -235,7 +235,7 @@ body {
 
 .flex-col {
   flex-direction: column;
-}
+} 
 
 
 }
