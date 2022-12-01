@@ -1,0 +1,48 @@
+.main{
+    position: absolute;
+    left: 575px;
+    max-width: 1600px;
+    max-height: 1400px;
+    height: 90vh;
+    width: 120vw;
+    display: flex;
+    border: 0px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    /* box-shadow: 1px 3px 10px #e9ecef; */
+    background-color: hsl(0, 0%, 100%);
+
+}
+
+  .main .buttons{
+   width: 200px; 
+   position: absolute;
+   left: 150px;
+   border: #1a0d5b;
+   border-width: 400px;
+   border-radius: 100px;
+   padding-top: 2%;
+   
+   
+  }
+  
+  .main .table{  
+  position: absolute; 
+  padding-top: 2%;
+  right: 100px;
+  border: #12064f;
+  border-left: #5a5d8c;
+  background-color:#9381ea;
+}
+ 
+
+.createAsset-form label{
+    color: whitesmoke !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px !important;
+  }
+
+  .footer{
+    text-align: center;
+  }  
+
+  

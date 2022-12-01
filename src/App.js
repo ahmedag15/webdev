@@ -6,7 +6,7 @@ import Dashboard from './components/Dashboard';
 import Departments from './components/Departments';
 import Assets from './components/Assets';
 import EmployeeRecords from './components/EmployeeRecords';
- 
+
 function App() {
 
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/departments" element={<Departments />} />
           <Route exact path="/assets" element={<Assets />} />
           <Route exact path="/employeerecords" element={<EmployeeRecords />} />
-        
+
 
         </Routes>
       </Router>

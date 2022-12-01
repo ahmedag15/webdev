@@ -1,23 +1,26 @@
 import React from 'react'
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form'
+
 import bgImg from '../assets/mainIMG.jpg';
 import agImg from '../assets/signinIMG.png';
 
 
 export default function Login() {
 
-    const { handleSubmit, formState: { errors } } = useForm()
+    const {handleSubmit, formState: { errors } } = useForm()
     const onSubmit = data => console.log(data);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    //const navigate = useNavigate();
+
 
     const navigateToDashboard = () => {
 
         var data = JSON.stringify({
-            "email": "stockr@gmail.com",
-            "password": "12345678"
+            "email": email,
+            "password": password
         });
 
         var config = {
@@ -53,12 +56,16 @@ export default function Login() {
                 <form id='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                     <input
                         type="text"
-                        placeholder='username'
+                        placeholder='email'
+                        onChange={(e) => setEmail(e.target.value)}
+                        id="email"
                         required
                     />
                     <input
                         type="password"
                         placeholder='password'
+                        onChange={(e) => setPassword(e.target.value)}
+                        id="password"
                         required />
                     <button className='btn' onClick={navigateToDashboard}>Login</button>
                 </form>
