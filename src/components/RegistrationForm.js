@@ -69,7 +69,7 @@ export default function RegistrationForm() {
                 </div>
             </div>
             <div class="footer">
-                
+{/*                 
                     <FormControl fullWidth>
                      <InputLabel id="demo-simple-select-label" placeholder='Designation'>Designation</InputLabel>
                       <Select>
@@ -80,7 +80,7 @@ export default function RegistrationForm() {
                      <InputLabel id="demo-simple-select-label" placeholder='Department'>Department</InputLabel>
                       <Select>
                       </Select>
-                    </FormControl>
+                    </FormControl> */}
 
                     <button onClick={() => handleSubmit()} type="submit" class="btn">Confirm</button>
 
