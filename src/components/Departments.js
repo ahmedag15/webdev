@@ -1,9 +1,11 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import {Select, FormControl, InputLabel} from "@material-ui/core";
+import ReadRegisteredUserTable from './ReadRegisteredUserTable';
 import {useForm} from 'react-hook-form'
 import {useState} from "react";
 import RegistrationForm from './RegistrationForm';
+
 
 
 
@@ -19,6 +21,7 @@ export default function Departments() {
                 <div className="container-1">
                     <h1>Sub Departments</h1>
                     <button className='btn1'>View</button>
+                    <ReadRegisteredUserTable></ReadRegisteredUserTable>
                 </div>
 
 

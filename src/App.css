@@ -176,6 +176,14 @@ body {
    
    
   }
+  .table-main2 .container-1{  
+    position: absolute; 
+    padding-top: 2%;
+    right: 100px;
+    border: #12064f;
+    border-left: #5a5d8c;
+    background-color:#21155a;
+  }
   
   .department .container-2{
   position: absolute; 
@@ -240,6 +248,9 @@ body {
 .flex-col {
   flex-direction: column;
 } 
+
+
+
 
 
                                                                  
