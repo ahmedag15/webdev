@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Asset.css';
 import { Button, Form } from 'semantic-ui-react'
+import ReadAssetTable from './ReadAssetTable';
 import axios from 'axios';
 
 export default function AssetAdd() {
@@ -76,7 +77,7 @@ export default function AssetAdd() {
            <label>Created By</label>
             <input placeholder='Created By' onChange={(e) => setcreated_by(e.target.value)} />
         </Form.Field>
-        <Button onClick={postData} type='submit'>Submit</Button>
+        <Button onClick={postData} type='submit'>Add Asset</Button>
     </Form>
     </div>
   )
