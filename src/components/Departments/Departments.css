@@ -1,0 +1,36 @@
+.department{
+    position: absolute;
+    left: 650px;
+    max-width: 1400px;
+    max-height: 1200px;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    border: 0px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    /* box-shadow: 1px 3px 10px #e9ecef; */
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  .department .container-1{
+   position: absolute;
+   left: 250px;
+   border: #12064f;
+   
+   
+  }
+  .table-main2 .container-1{  
+    position: absolute; 
+    padding-top: 2%;
+    right: 100px;
+    border: #12064f;
+    border-left: #5a5d8c;
+    background-color:#21155a;
+  }
+  
+  .department .container-2{
+  position: absolute; 
+  right: 250px;
+  border: #12064f;
+  border-left: #5a5d8c;
+}

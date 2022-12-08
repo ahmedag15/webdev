@@ -1,5 +1,6 @@
-import React from 'react'
-import Sidebar from './Sidebar'
+import React from 'react';
+import Sidebar from '../Sidebar/Sidebar';
+import './EmployeeRecords.css';
 
 export default function EmployeeRecords() {
     return (

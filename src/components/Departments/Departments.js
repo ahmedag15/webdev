@@ -1,11 +1,10 @@
-import React from 'react'
-import Sidebar from './Sidebar'
-import {Select, FormControl, InputLabel} from "@material-ui/core";
-import ReadRegisteredUserTable from './ReadRegisteredUserTable';
-import {useForm} from 'react-hook-form'
-import {useState} from "react";
-import RegistrationForm from './RegistrationForm';
-
+import React from 'react';
+import { useState } from "react";
+import { useForm } from 'react-hook-form';
+import { Select, FormControl, InputLabel } from "@material-ui/core";
+import Sidebar from '../Sidebar/Sidebar';
+import RegistrationForm from '../RegistrationForm/RegistrationForm';
+import './Departments.css';
 
 
 
@@ -21,7 +20,7 @@ export default function Departments() {
                 <div className="container-1">
                     <h1>Sub Departments</h1>
                     <button className='btn1'>View</button>
-                    <ReadRegisteredUserTable></ReadRegisteredUserTable>
+                   
                 </div>
 
 
@@ -32,14 +31,11 @@ export default function Departments() {
                         <InputLabel id="demo-simple-select-label" placeholder='Add User'>Add User</InputLabel>
                         <Select>
                             <RegistrationForm></RegistrationForm>
-
                         </Select>
                     </FormControl>
 
                 </div>
             </div>
-
-
         </>
 
     )

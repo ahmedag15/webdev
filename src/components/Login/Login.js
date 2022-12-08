@@ -1,22 +1,22 @@
-import React from 'react'
-import axios from 'axios';
+import React from 'react';
 import { useState } from 'react';
-import { useForm } from 'react-hook-form'
-
-import bgImg from '../assets/mainIMG.jpg';
-import agImg from '../assets/signinIMG.png';
+import { useForm } from 'react-hook-form';
+import axios from 'axios';
+import bgImg from '../../Pictures/mainIMG.jpg';
+import agImg from '../../Pictures/signinIMG.png';
+import './Login.css';
 
 
 export default function Login() {
 
-    const {handleSubmit, formState: { errors } } = useForm()
+    const { handleSubmit, formState: { errors } } = useForm()
     const onSubmit = data => console.log(data);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
 
 
-    const navigateToDashboard = () => {
+    const navigateToApp = () => {
 
         var data = JSON.stringify({
             "email": email,
@@ -35,7 +35,7 @@ export default function Login() {
         axios(config)
             .then(function (response) {
                 // console.log(JSON.stringify(response.data));
-                window.location.href = '/dashboard'
+                window.location.href = '/departments'
             })
             .catch(function (error) {
                 console.log(error);
@@ -51,7 +51,7 @@ export default function Login() {
                     <img style={{ width: 350, height: 125 }} src={agImg} alt="" />
                 </div>
 
-                <span>login with your credentials</span>
+                <span>Login with your credentials</span>
 
                 <form id='form' className='flex flex-col' onSubmit={handleSubmit(onSubmit)}>
                     <input
@@ -67,7 +67,7 @@ export default function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                         id="password"
                         required />
-                    <button className='btn' onClick={navigateToDashboard}>Login</button>
+                    <button className='btn' onClick={navigateToApp}>Login</button>
                 </form>
             </div>
 

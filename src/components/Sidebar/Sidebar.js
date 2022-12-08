@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { SidebarData } from './SidebarData';
+import './Sidebar.css';
 
 
 export default function Sidebar() {
@@ -12,7 +13,7 @@ export default function Sidebar() {
           <li
 
             className='row'
-            id={window.location.href === val.link ? "active" : ""}
+            id={window.location.href === val.link ? "active" : " "}
             key={key} onClick={() => {
               window.location.href = val.link
 
