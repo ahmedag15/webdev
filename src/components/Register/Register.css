@@ -1,22 +1,36 @@
-.section {
-    max-width: 1200px;
-    max-height: 1200px;
-    height: 60vh;
+.main {
+    max-width: 1500px;
+    max-height: 1500px;
+    height: 75  vh;
     width: 100vw;
     display: flex;
     border: 0px solid #e9ecef;
     border-radius: 20px;
     /* box-shadow: 1px 3px 10px #e9ecef; */
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(189, 188, 216);
+    position: fixed;
+    right: 10%;
     
 }
 
+.main .col_1 {
+    margin: auto;
+    padding: 3em 2em;
+    background-color: #1b2157;
+    border-radius: 20px;
+    border-color: #1b2157;
+    border-width: 10px;
+   
+}
 
-.section span {
-    color: #404362;
-    font-size: large;
-
-}   
+.main .col_2 {
+    margin: auto;
+    padding: 0em 0em;
+    width: 1000px;
+    border-color: #1b2157;
+    border-width: 10px;
+   
+}
 
 #form {
     max-width: 320px;
@@ -41,7 +55,7 @@
     color: #e9ecef;
     font-size: 1em;
     cursor: pointer;
-    box-shadow: 5px 5px 10px #1a2958;
+    box-shadow: 5px 5px 10px #384772;
     border-radius: 20px;
 }
 
@@ -54,24 +68,11 @@
     flex-direction: column;
 }
 
-.section .col-1 {
-    margin: auto;
-    padding: 2em 0;
-}
-
-.section .col-2 img {
-    width: 650px;
-    height: 100%;
-    object-fit: cover;
-    align-self: flex-end;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: none;
-}
-
-
 @media screen and (min-width: 860px) {
-    .section .col-2 img {
+    .main .col_2 img {
         display: initial;
     }
 }
+
+
+

@@ -53,3 +53,29 @@
 
 
   }
+
+  .btn-logout{
+    width: 90%;
+    height: 80px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    color: #12064f;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;;
+    position: absolute;
+    left: 10px;
+    bottom: 30px;
+    border-radius: 20px;
+    
+
+
+  }
+
+  .btn-logout :hover{
+    cursor: pointer;
+    background-color: #212449;
+  }
